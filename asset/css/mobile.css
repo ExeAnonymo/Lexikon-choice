@@ -1,0 +1,48 @@
+    /* Navigation adjustments */
+    @media (max-width: 790px) {
+        nav .nav-bar .sidebarOpen {
+            display: block;
+        }
+
+        .menu {
+            width: 100%; /* Full width for mobile menu */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visibility */
+        }
+
+        .menu .logo-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu .nav-links {
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .nav-links li a {
+            margin-top: 15px; /* Adjust spacing */
+            font-size: 16px; /* Adjust font size */
+        }
+
+        .searchBox {
+            position: relative;
+            margin-top: 10px; /* Adjust margin */
+        }
+
+        .searchBox .search-field {
+            width: 100%; /* Full width search field on mobile */
+            bottom: 0;
+            right: 0;
+            box-shadow: none; /* Remove shadow for mobile */
+        }
+    }
+
+
+/* Hide the mobile menu by default on larger screens */
+@media (min-width: 791px) {
+    .menu {
+        display: none;
+    }
+}

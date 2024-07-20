@@ -1,0 +1,248 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+
+
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+/* Blog boxes */
+.blogs {
+    margin: 40px 0;
+    align-items: center;
+}
+.blogs h2{
+    
+    font-size: 30px;
+  font-weight: bold;
+  color: #3f3f3f;
+  text-align: center;
+  margin: 20px 0;
+}
+.blogs .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.blog-box {
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.blog-box img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.blog-box h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.blog-box p {
+    font-size: 1em;
+    color: #666;
+}
+.blog-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #048eff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.blog-box a:hover {
+    background-color: #555;
+}
+
+/* Blog boxes ends*/
+
+.header {
+    background: url('../imeges/banner3.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.header h1 {
+    
+
+    font-family: 'Simplifica', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #efefef; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #aea9a9; /*Light grey underline*/
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust values as needed */
+    color: #ffffff; /* Ensure the text color contrasts with the shadow */
+}
+
+.header p {
+    font-size: 1.2rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Strong shadow effect */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners for the background */
+    display: inline-block; /* Ensure the background only wraps the text */
+   
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #383737;
+    text-align: center;
+}
+
+
+.blog-post {
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+   
+    
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.read-more {
+    
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;  
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .blog-box {
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .blog-box {
+        width: 30%;
+    }
+}
+
+
+
+/* //blog page adjusutment */
+
+#simg {
+    display: block;
+    margin-bottom: 30px; /* Adjust this value to your desired spacing */
+}
+
+.blog-post ul {
+    padding-top: 20px; /* Adjust this value if more space is needed */
+}
+
+
+/* buy Link */
+
+.buy-button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buy-text {
+    margin-bottom: 10px; /* Adjust the value to control the space between text and button */
+    font-size: 16px;
+    color: #333; /* Text color */
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF9900; /* Amazon's color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #CC7A00; /* Darker shade for hover effect */
+}
+#red{
+    color: red;
+}
+
+
+/* readmore button */
+#rdmr {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+

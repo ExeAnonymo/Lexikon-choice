@@ -1,0 +1,32 @@
+/* Ad Container Styling */
+.ad-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.ad-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ad-container .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
